@@ -252,7 +252,7 @@ export default function Home() {
         {/* Header Section */}
         <header className="text-center">
           <h1 className="text-4xl font-bold tracking-tight text-primary sm:text-5xl md:text-6xl">
-            ГК "Академия Бизнеса и Финансов"
+            ГК &quot;Академия Бизнеса и Финансов&quot;
           </h1>
           <p className="mt-3 text-lg text-muted-foreground sm:text-xl">
             Ответы на частые вопросы
@@ -262,7 +262,7 @@ export default function Home() {
         {/* Intro Section */}
         <section className="text-center">
           <p className="mx-auto max-w-2xl text-base leading-relaxed text-foreground/90">
-            Мы рады, что вы обратились в ГК "Академию Бизнеса и Финансов"! Мы
+            Мы рады, что вы обратились в ГК &quot;Академию Бизнеса и Финансов&quot;! Мы
             ценим ваше время и хотим, чтобы наше сотрудничество было максимально
             понятным и эффективным. Ниже мы ответили на самые распространенные
             вопросы наших клиентов.
@@ -282,7 +282,7 @@ export default function Home() {
                     if (el.type === "paragraph") {
                       return (
                         <p key={index} className="leading-relaxed">
-                          <UnsafeHtml html={el.content} />
+                          <UnsafeHtml html={el.content || ""} />
                         </p>
                       )
                     }
@@ -292,7 +292,7 @@ export default function Home() {
                           key={index}
                           className="font-semibold text-foreground"
                         >
-                          <UnsafeHtml html={el.content} />
+                          <UnsafeHtml html={el.content || ""} />
                         </h4>
                       )
                     }
@@ -302,7 +302,7 @@ export default function Home() {
                           key={index}
                           className="list-disc space-y-2 pl-5"
                         >
-                          {el.items.map((li, liIndex) => (
+                          {el.items?.map((li, liIndex) => (
                             <li key={liIndex}>
                               <UnsafeHtml html={li} />
                             </li>
@@ -315,7 +315,7 @@ export default function Home() {
                         <Button key={index} asChild className="mt-2">
                           <Link href={el.href} target="_blank">
                             <MessageCircle className="mr-2 h-4 w-4" />
-                            {el.text}
+                            {el.text || ""}
                           </Link>
                         </Button>
                       )
@@ -323,7 +323,7 @@ export default function Home() {
                     if (el.type === "small") {
                       return (
                         <p key={index} className="text-sm text-muted-foreground">
-                          <UnsafeHtml html={el.content} />
+                          <UnsafeHtml html={el.content || ""} />
                         </p>
                       )
                     }
@@ -360,7 +360,7 @@ export default function Home() {
         {/* Footer Section */}
         <footer className="border-t border-border/50 pt-8 text-center text-sm text-muted-foreground">
           <p>
-            &copy; {new Date().getFullYear()} ГК "Академия Бизнеса и Финансов".
+            &copy; {new Date().getFullYear()} ГК &quot;Академия Бизнеса и Финансов&quot;.
             Все права защищены.
           </p>
           <div className="mt-2 flex items-center justify-center space-x-4">
