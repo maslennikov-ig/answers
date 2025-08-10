@@ -250,7 +250,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-center p-4 sm:p-8 md:p-12">
       <div className="w-full max-w-4xl space-y-12">
         {/* Header Section */}
-        <header className="text-center">
+        <header className="text-center fade-in-section">
           <h1 className="text-4xl font-bold tracking-tight text-primary sm:text-5xl md:text-6xl">
             ГК &quot;Академия Бизнеса и Финансов&quot;
           </h1>
@@ -260,7 +260,7 @@ export default function Home() {
         </header>
 
         {/* Intro Section */}
-        <section className="text-center">
+        <section className="text-center fade-in-section" style={{ animationDelay: "0.2s" }}>
           <p className="mx-auto max-w-2xl text-base leading-relaxed text-foreground/90">
             Мы рады, что вы обратились в ГК &quot;Академию Бизнеса и Финансов&quot;! Мы
             ценим ваше время и хотим, чтобы наше сотрудничество было максимально
@@ -270,11 +270,11 @@ export default function Home() {
         </section>
 
         {/* FAQ Accordion Section */}
-        <section id="faq">
+        <section id="faq" className="fade-in-section" style={{ animationDelay: "0.4s" }}>
           <Accordion type="single" collapsible className="w-full">
             {faqData.map((item) => (
-              <AccordionItem key={item.id} value={item.id}>
-                <AccordionTrigger className="text-left text-lg hover:no-underline">
+              <AccordionItem key={item.id} value={item.id} className="transition-all duration-300 hover:bg-muted/50 rounded-lg">
+                <AccordionTrigger className="text-left text-lg hover:no-underline px-4">
                   {item.question}
                 </AccordionTrigger>
                 <AccordionContent className="space-y-4 pt-2 text-base">
@@ -336,7 +336,7 @@ export default function Home() {
         </section>
 
         {/* CTA Section */}
-        <section className="rounded-lg bg-primary/10 p-8 text-center">
+        <section className="rounded-lg bg-primary/10 p-8 text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-1 fade-in-section" style={{ animationDelay: "0.6s" }}>
           <h2 className="text-2xl font-bold text-primary">
             Не нашли ответ на свой вопрос?
           </h2>
@@ -363,22 +363,6 @@ export default function Home() {
             &copy; {new Date().getFullYear()} ГК &quot;Академия Бизнеса и Финансов&quot;.
             Все права защищены.
           </p>
-          <div className="mt-2 flex items-center justify-center space-x-4">
-            <Link
-              href="https://academy-of-finance.ru/"
-              target="_blank"
-              className="inline-flex items-center hover:text-primary hover:underline"
-            >
-              Сайт <ExternalLink className="ml-1 h-4 w-4" />
-            </Link>
-            <Link
-              href="https://t.me/academy_of_finance"
-              target="_blank"
-              className="inline-flex items-center hover:text-primary hover:underline"
-            >
-              Telegram <Send className="ml-1 h-4 w-4" />
-            </Link>
-          </div>
         </footer>
       </div>
     </main>
