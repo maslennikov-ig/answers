@@ -112,15 +112,6 @@
   --sidebar-ring: oklch(0.551 0.027 264.364);
 }
 
-@layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-}
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -134,4 +125,13 @@
 
 .fade-in-section {
   animation: fadeIn 0.8s ease-out forwards;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
 }
