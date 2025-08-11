@@ -252,7 +252,7 @@ export default function Home() {
         {/* Header Section */}
         <header className="text-center">
           <h1 className="text-4xl font-bold tracking-tight text-primary sm:text-5xl md:text-6xl">
-            ГК "Академия Бизнеса и Финансов"
+            ГК &quot;Академия Бизнеса и Финансов&quot;
           </h1>
           <p className="mt-3 text-lg text-muted-foreground sm:text-xl">
             Ответы на частые вопросы
@@ -262,7 +262,7 @@ export default function Home() {
         {/* Intro Section */}
         <section className="text-center">
           <p className="mx-auto max-w-2xl text-base leading-relaxed text-foreground/90">
-            Мы рады, что вы обратились в ГК "Академию Бизнеса и Финансов"! Мы
+            Мы рады, что вы обратились в ГК &quot;Академию Бизнеса и Финансов&quot;! Мы
             ценим ваше время и хотим, чтобы наше сотрудничество было максимально
             понятным и эффективным. Ниже мы ответили на самые распространенные
             вопросы наших клиентов.
@@ -360,7 +360,7 @@ export default function Home() {
         {/* Footer Section */}
         <footer className="border-t border-border/50 pt-8 text-center text-sm text-muted-foreground">
           <p>
-            &copy; {new Date().getFullYear()} ГК "Академия Бизнеса и Финансов".
+            &copy; {new Date().getFullYear()} ГК &quot;Академия Бизнеса и Финансов&quot;.
             Все права защищены.
           </p>
           <div className="mt-2 flex items-center justify-center space-x-4">
