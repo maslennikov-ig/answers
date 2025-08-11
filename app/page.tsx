@@ -363,22 +363,6 @@ export default function Home() {
             &copy; {new Date().getFullYear()} ГК &quot;Академия Бизнеса и Финансов&quot;.
             Все права защищены.
           </p>
-          <div className="mt-2 flex items-center justify-center space-x-4">
-            <Link
-              href="https://academy-of-finance.ru/"
-              target="_blank"
-              className="inline-flex items-center hover:text-primary hover:underline"
-            >
-              Сайт <ExternalLink className="ml-1 h-4 w-4" />
-            </Link>
-            <Link
-              href="https://t.me/academy_of_finance"
-              target="_blank"
-              className="inline-flex items-center hover:text-primary hover:underline"
-            >
-              Telegram <Send className="ml-1 h-4 w-4" />
-            </Link>
-          </div>
         </footer>
       </div>
     </main>
