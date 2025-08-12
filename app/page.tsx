@@ -259,7 +259,7 @@ export default function Home() {
       <Card className="w-full max-w-5xl animate-fade-in-up opacity-0 shadow-xl">
         <CardHeader className="text-center">
           <CardTitle className="text-3xl font-bold tracking-tight text-primary sm:text-4xl md:text-5xl">
-            ГК "Академия Бизнеса и Финансов"
+            ГК &quot;Академия Бизнеса и Финансов&quot;
           </CardTitle>
           <CardDescription className="mt-2 text-lg text-muted-foreground sm:text-xl">
             Ответы на частые вопросы
@@ -269,10 +269,10 @@ export default function Home() {
           {/* Intro Section */}
           <section className="text-center">
             <p className="mx-auto max-w-3xl text-base leading-relaxed text-foreground/80">
-              Мы рады, что вы обратились в ГК "Академию Бизнеса и Финансов"! Мы
-              ценим ваше время и хотим, чтобы наше сотрудничество было
-              максимально понятным и эффективным. Ниже мы ответили на самые
-              распространенные вопросы наших клиентов.
+              Мы рады, что вы обратились в ГК &quot;Академию Бизнеса и
+              Финансов&quot;! Мы ценим ваше время и хотим, чтобы наше
+              сотрудничество было максимально понятным и эффективным. Ниже мы
+              ответили на самые распространенные вопросы наших клиентов.
             </p>
           </section>
 
@@ -378,8 +378,8 @@ export default function Home() {
         <CardFooter className="flex justify-center border-t border-border/50 pt-6 text-center text-sm text-muted-foreground">
           <div className="flex flex-col items-center space-y-2">
             <p>
-              &copy; {new Date().getFullYear()} ГК "Академия Бизнеса и
-              Финансов". Все права защищены.
+              &copy; {new Date().getFullYear()} ГК &quot;Академия Бизнеса и
+              Финансов&quot;. Все права защищены.
             </p>
             <div className="flex items-center space-x-4">
               <Link
