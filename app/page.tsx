@@ -317,7 +317,7 @@ export default function Home() {
                             key={index}
                             className="list-disc space-y-2 pl-5"
                           >
-                            {el.items.map((li, liIndex) => (
+                            {el.items?.map((li, liIndex) => (
                               <li key={liIndex}>
                                 <UnsafeHtml html={li} />
                               </li>
