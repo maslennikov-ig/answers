@@ -297,7 +297,7 @@ export default function Home() {
                       if (el.type === "paragraph") {
                         return (
                           <p key={index} className="leading-relaxed">
-                            <UnsafeHtml html={el.content} />
+                            <UnsafeHtml html={el.content || ""} />
                           </p>
                         )
                       }
@@ -307,7 +307,7 @@ export default function Home() {
                             key={index}
                             className="font-semibold text-foreground"
                           >
-                            <UnsafeHtml html={el.content} />
+                            <UnsafeHtml html={el.content || ""} />
                           </h4>
                         )
                       }
@@ -341,7 +341,7 @@ export default function Home() {
                             key={index}
                             className="text-sm text-muted-foreground"
                           >
-                            <UnsafeHtml html={el.content} />
+                            <UnsafeHtml html={el.content || ""} />
                           </p>
                         )
                       }
