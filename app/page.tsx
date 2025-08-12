@@ -256,7 +256,7 @@ const UnsafeHtml = ({ html }: { html: string }) => (
 export default function Home() {
   return (
     <main className="flex min-h-screen w-full flex-col items-center p-4 sm:p-8 md:p-12">
-      <Card className="w-full max-w-5xl animate-fade-in-up opacity-0 shadow-xl">
+      <Card className="w-full max-w-5xl shadow-xl">
         <CardHeader className="text-center">
           <CardTitle className="text-3xl font-bold tracking-tight text-primary sm:text-4xl md:text-5xl">
             ГК &quot;Академия Бизнеса и Финансов&quot;
