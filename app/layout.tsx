@@ -35,7 +35,10 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className="absolute top-4 right-4">
+          <div className="fixed inset-0 -z-10 h-full w-full bg-background">
+            <div className="grainy-light dark:grainy-dark absolute inset-0 -z-10" />
+          </div>
+          <div className="absolute top-4 right-4 z-10">
             <ThemeToggle />
           </div>
           {children}
